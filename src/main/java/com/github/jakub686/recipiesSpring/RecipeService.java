@@ -12,6 +12,10 @@ public class RecipeService {
         this.recipeRepository = recipeRepository;
     }
 
+    public Recipe findRecipeById(Long id) {
+        return recipeRepository.findRecipeById(id);
+    }
+
     public Recipe save(Recipe toSave) {
         return recipeRepository.save(toSave);
     }
